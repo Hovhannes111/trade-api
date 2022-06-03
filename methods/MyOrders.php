@@ -1,9 +1,10 @@
 <?php
-include('Methods.php');
+
+require('Methods.php');
 
 class MyOrders extends Methods
 {
-    public function MyOrders($req = array())
+    public function index($req = array())
     {
         $res = $this->apiRequest->setRequest(array(
             'method' => 'my_orders',

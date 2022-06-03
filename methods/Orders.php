@@ -1,9 +1,10 @@
 <?php
-include('Methods.php');
+
+require('Methods.php');
 
 class Orders extends Methods
 {
-    public function Orders($pair = 'BTC_USDT')
+    public function index($pair = 'BTC_USDT')
     {
         $res = $this->apiRequest->setRequest(array(
             'method' => 'orders',

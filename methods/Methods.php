@@ -1,6 +1,6 @@
 <?php
 
-include('../ApiRequest.php');
+require('requests/ApiRequest.php');
 
 class Methods
 {

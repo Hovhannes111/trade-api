@@ -1,5 +1,5 @@
 <?php 
-include('CurlRequest.php');
+require ('CurlRequest.php');
 use Exception;
 use CurlRequest;
 

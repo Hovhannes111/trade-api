@@ -1,10 +1,11 @@
 <?php
-include('Methods.php');
+
+require('Methods.php');
 
 class Account extends Methods
 {
 
-    public function Account()
+    public function index()
     {
         $res = $this->apiRequest->setRequest(array(
             'method' => 'account',
