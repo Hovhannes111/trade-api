@@ -14,7 +14,7 @@ foreach ($methods as $method){
 $router = new Router();
 $path = trim($_SERVER["PATH_INFO"], '/');
 
-if(in_array($path, $allMethods['Methods']))
+if(in_array(strtolower($path), $allMethods['Methods']))
 {
 
     $index = array_search($path, $allMethods['Methods']);
