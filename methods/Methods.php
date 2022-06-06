@@ -1,6 +1,6 @@
 <?php
 
-require('requests/ApiRequest.php');
+require_once 'requests/ApiRequest.php';
 
 class Methods
 {

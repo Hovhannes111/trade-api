@@ -1,6 +1,6 @@
 <?php
 
-require('Methods.php');
+require_once 'Methods.php';
 
 class Info extends Methods
 {
@@ -12,6 +12,3 @@ class Info extends Methods
         return $res;
     }
 }
-
-$x = new Info();
-echo "<pre>";

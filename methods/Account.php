@@ -1,6 +1,6 @@
 <?php
 
-require('Methods.php');
+require_once 'Methods.php';
 
 class Account extends Methods
 {
@@ -11,6 +11,6 @@ class Account extends Methods
             'method' => 'account',
         ));
         
-        return $res['balances'];
+        return $res['balances'] ?? [];
     }
 }

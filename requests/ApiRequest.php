@@ -1,7 +1,5 @@
 <?php 
-require ('CurlRequest.php');
-use Exception;
-use CurlRequest;
+require_once 'CurlRequest.php';
 
 class ApiRequest
 {
@@ -31,13 +29,12 @@ class ApiRequest
         if ($arResponse['success'] !== true)
         {
             $this->arError = $arResponse['error'];
-            throw new Exception($arResponse['error']['code']);
+            // throw new Exception($arResponse['error']['code']);
         }
 
         return $arResponse;
     }
 
-    // TODO add method for this function
     public function GetError()
     {
         return $this->arError;

@@ -21,7 +21,7 @@ class Router
 
         if(file_exists($file_dir))
         {
-            require $file_dir;
+            require_once $file_dir;
         }
         else {
             http_response_code(405);
